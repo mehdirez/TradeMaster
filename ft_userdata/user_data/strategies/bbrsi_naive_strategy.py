@@ -1,81 +1,122 @@
-# bbrsi_strategy.py
-from freqtrade.strategy.interface import IStrategy
+# pragma pylint: disable=missing-docstring, invalid-name, pointless-string-statement
+# isort: skip_file
+# --- Do not remove these libs ---
+import numpy as np  # noqa
+import pandas as pd  # noqa
 from pandas import DataFrame
-from freqtrade.strategy import stoploss_from_open
+
+from freqtrade.strategy.interface import IStrategy
+
+# --------------------------------
+# Add your lib to import here
 import talib.abstract as ta
+import freqtrade.vendor.qtpylib.indicators as qtpylib
 
-class BBRsiStrategy(IStrategy):
-    """
-    Bollinger Bands (BB) and Relative Strength Index (RSI) strategy.
-    """
+class BBRSINaiveStrategy(IStrategy):
+    # Strategy interface version - allow new iterations of the strategy interface.
+    # Check the documentation or the Sample strategy to get the latest version.
+    INTERFACE_VERSION = 2
 
-    # Strategy parameters
-    buy_bb_lowerband = 0.0
-    sell_bb_upperband = 0.0
-    buy_rsi_threshold = 25
-    sell_rsi_threshold = 70
     # Minimal ROI designed for the strategy.
+    # This attribute will be overridden if the config file contains "minimal_roi".
     minimal_roi = {
-        "60": 0.01,
-        "30": 0.02,
-        "0": 0.04
+        # "30": 0.04,
+        # "20": 0.06,
+        "0": 0.08
     }
 
-    # Stoploss configuration
-    stoploss = -0.01
-    stoploss_atr = 3
+    # Optimal stoploss designed for the strategy.
+    # This attribute will be overridden if the config file contains "stoploss".
+    stoploss = -0.3
 
-    # Timeframe for Bollinger Bands
-    timeframe = '5m'
+    # Trailing stoploss
+    trailing_stop = False
+    # trailing_only_offset_is_reached = False
+    # trailing_stop_positive = 0.01
+    # trailing_stop_positive_offset = 0.0  # Disabled / not configured
+
+    # Optimal ticker interval for the strategy.
+    timeframe = '15m'
+
+    # Run "populate_indicators()" only for new candle.
+    process_only_new_candles = False
+
+    # These values can be overridden in the "ask_strategy" section in the config.
+    use_sell_signal = True
+    sell_profit_only = False
+    ignore_roi_if_buy_signal = False
+
+    # Number of candles the strategy requires before producing valid signals
+    startup_candle_count: int = 30
+
+    # Optional order type mapping.
+    order_types = {
+        'buy': 'limit',
+        'sell': 'limit',
+        'stoploss': 'market',
+        'stoploss_on_exchange': False
+    }
+
+    # Optional order time in force.
+    order_time_in_force = {
+        'buy': 'gtc',
+        'sell': 'gtc'
+    }
+
+    plot_config = {
+        'main_plot': {
+            'bb_upperband': {'color': 'green'},
+            'bb_midband': {'color': 'orange'},
+            'bb_lowerband': {'color': 'red'},
+        },
+        'subplots': {
+            "RSI": {
+                'rsi': {'color': 'yellow'},
+            }
+        }
+    }
+
+    def informative_pairs(self):
+        """
+        Define additional, informative pair/interval combinations to be cached from the exchange.
+        These pair/interval combinations are non-tradeable, unless they are part
+        of the whitelist as well.
+        For more information, please consult the documentation
+        :return: List of tuples in the format (pair, interval)
+            Sample: return [("ETH/USDT", "5m"),
+                            ("BTC/USDT", "15m"),
+                            ]
+        """
+        return []
 
     def populate_indicators(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
-        """
-        Add Bollinger Bands (BB) and Relative Strength Index (RSI) to the dataframe.
-        """
-        # Calculate Bollinger Bands
-        bollinger = ta.BBANDS(dataframe, timeperiod=20)
-
-        # Add Bollinger Bands to the dataframe
-        dataframe['bb_lowerband'] = bollinger['lowerband']
-        dataframe['bb_upperband'] = bollinger['upperband']
-
-        # Calculate Relative Strength Index (RSI)
+        # RSI
         dataframe['rsi'] = ta.RSI(dataframe)
+
+        # Bollinger bands
+        bollinger = qtpylib.bollinger_bands(qtpylib.typical_price(dataframe), window=20, stds=2)
+        dataframe['bb_upperband'] = bollinger['upper']
+        dataframe['bb_midband'] = bollinger['mid']
+        dataframe['bb_lowerband'] = bollinger['lower']
 
         return dataframe
 
     def populate_buy_trend(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
-        """
-        Generate buy signals based on strategy conditions.
-        """
-        # Buy conditions: Close below lower Bollinger Band and RSI below threshold
-        buy_conditions = (
-            (dataframe['close'] < dataframe['bb_lowerband'] * (1 - self.buy_bb_lowerband)) &
-            (dataframe['rsi'] < self.buy_rsi_threshold)
-        )
-        dataframe.loc[buy_conditions, 'buy'] = 1
+        dataframe.loc[
+            (
+                (dataframe['rsi'] > 25) &  # Signal: RSI is greater 25
+                (dataframe['close'] < dataframe['bb_lowerband']) # Signal: price is less than lower bb
+            ),
+            'buy'] = 1
 
         return dataframe
 
     def populate_sell_trend(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
-        """
-        Generate sell signals based on strategy conditions.
-        """
-        # Sell conditions: Close above upper Bollinger Band and RSI above threshold
-        sell_conditions = (
-            (dataframe['close'] > dataframe['bb_upperband'] * (1 + self.sell_bb_upperband)) &
-            (dataframe['rsi'] > self.sell_rsi_threshold)
-        )
-        dataframe.loc[sell_conditions, 'sell'] = 1
+        dataframe.loc[
+            (
+                (dataframe['rsi'] > 70) &  # Signal: RSI is greater 70
+                (dataframe['close'] > dataframe['bb_midband']) # Signal: price is greater than mid bb
+            ),
+            'sell'] = 1
 
         return dataframe
-
-    def populate_stop_loss(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
-        """
-        Populate stop loss values.
-        """
-        return stoploss_from_open(dataframe, stoploss=self.stoploss, atr=self.stoploss_atr)
-    
-
-# To use this strategy, run Freqtrade with the following command:
-# freqtrade trade --strategy BBRsiStrategy --config config.json --exchange binance -v
