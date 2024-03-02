@@ -813,3 +813,15 @@ freqtrade.exceptions.OperationalException: Invalid timeframe '15'. This exchange
 2024-03-02 14:36:26,060 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2024.1', state='RUNNING'
 2024-03-02 14:37:26,067 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2024.1', state='RUNNING'
 2024-03-02 14:38:26,076 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2024.1', state='RUNNING'
+2024-03-02 14:39:31,075 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2024.1', state='RUNNING'
+2024-03-02 14:40:31,090 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2024.1', state='RUNNING'
+2024-03-02 14:41:31,097 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2024.1', state='RUNNING'
+2024-03-02 14:42:05,936 - VolumePairList - INFO - Pair BNB/USDT in your blacklist. Removing it from whitelist...
+2024-03-02 14:42:05,982 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 20 pairs: ['BTC/USDT', 'FDUSD/USDT', 'SHIB/USDT', 'ETH/USDT', 'DOGE/USDT', 'PEPE/USDT', 'SOL/USDT', 'USDC/USDT', 'XRP/USDT', 'FLOKI/USDT', 'BCH/USDT', 'BONK/USDT', 'MEME/USDT', 'ADA/USDT', 'ORDI/USDT', 'FIL/USDT', 'WLD/USDT', '1000SATS/USDT', 'LTC/USDT', 'UNI/USDT']
+2024-03-02 14:42:36,072 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2024.1', state='RUNNING'
+2024-03-02 14:43:36,079 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2024.1', state='RUNNING'
+2024-03-02 14:44:36,109 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2024.1', state='RUNNING'
+2024-03-02 14:45:41,003 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2024.1', state='RUNNING'
+2024-03-02 14:46:41,008 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2024.1', state='RUNNING'
+2024-03-02 14:47:41,013 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2024.1', state='RUNNING'
+2024-03-02 14:48:41,019 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2024.1', state='RUNNING'

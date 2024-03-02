@@ -38,3 +38,7 @@ docker-compose run --rm freqtrade --help
 docker-compose run freqtrade download-data --exchange binance -t 15m
 #  list trade pairs
  docker-compose run freqtrade list-data --exchange binance
+# backtesting
+ docker-compose run freqtrade backtesting --datadir user_data/data/binance --export trades  --stake-amount 100 -s BBRsiStrategy -i 15m
+#  plottting
+docker-compose run freqtrade plot-dataframe --strategy BBRSINaiveStrategy -p ALGO/USDT -i 15
