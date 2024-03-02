@@ -1,11 +1,11 @@
 
 {
     "max_open_trades": 10,
-    "stake_currency": "BTC",
-    "stake_amount": 0.01,
+    "stake_currency": "USDT",
+    "stake_amount": "unlimited",
     "tradable_balance_ratio": 0.99,
     "fiat_display_currency": "USD",
-    "time_frame" : "15m",
+    "timeframe": "15m",
     "dry_run": true,
     "dry_run_wallet": 1000,
     "cancel_open_orders_on_exit": false,
@@ -39,22 +39,6 @@
         "ccxt_config": {},
         "ccxt_async_config": {},
         "pair_whitelist": [
-            "BTC/USD",
-            "ETH/USDT",
-            "ALGO/USDT",
-            "ATOM/USDT",
-            "BAT/USDT",
-            "BCH/USDT",
-            "EOS/USDT",
-            "IOTA/USDT",
-            "LINK/USDT",
-            "LTC/USDT",
-            "NEO/USDT",
-            "XMR/USDT",
-            "XRP/USDT",
-            "XTZ/USDT"
-
-
         ],
         "pair_blacklist": [
             "BNB/.*"
@@ -62,7 +46,7 @@
     },
     "pairlists": [
         {
-            "method": "StaticPairList",
+            "method": "VolumePairList",
             "number_assets": 20,
             "sort_key": "quoteVolume",
             "min_value": 0,
@@ -80,8 +64,8 @@
         "listen_port": 8080,
         "verbosity": "error",
         "enable_openapi": false,
-        "jwt_secret_key": "c38c7e0cf9e0c39da0548520d09a29e9f10e4bf0aaf02fc1c6307787cc9e5ad7",
-        "ws_token": "PzXiGnt1sQ3UzXNsmEGqKG_aYGufedW43g",
+        "jwt_secret_key": "e4ea3d5784e88d4a57afa29b1a443433ae8a6aa07b14dc922d84da4a29963635",
+        "ws_token": "DOxs2s85NxC-mvrvnRFFdgUCzQeDDE4pKQ",
         "CORS_origins": [],
         "username": "",
         "password": ""
@@ -92,4 +76,5 @@
     "internals": {
         "process_throttle_secs": 5
     }
+
 }

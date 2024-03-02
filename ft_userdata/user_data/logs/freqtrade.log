@@ -1,0 +1,679 @@
+2024-03-02 12:37:48,192 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-02 12:37:48,194 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-03-02 12:37:48,195 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-03-02 12:37:48,196 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-03-02 12:37:48,197 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-03-02 12:37:48,198 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2024-03-02 12:37:48,316 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-03-02 12:37:48,321 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-03-02 12:37:48,326 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-02 12:37:48,336 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-02 12:37:48,337 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-02 12:37:48,634 - freqtrade.commands.trade_commands - ERROR - Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:37:48,634 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 24, in start_trading
+    worker = Worker(args)
+             ^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqtradebot.py", line 71, in __init__
+    self.strategy: IStrategy = StrategyResolver.load_strategy(self.config)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 48, in load_strategy
+    strategy: IStrategy = StrategyResolver._load_strategy(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 280, in _load_strategy
+    raise OperationalException(
+freqtrade.exceptions.OperationalException: Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:37:53,182 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-02 12:37:53,183 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-03-02 12:37:53,184 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-03-02 12:37:53,185 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-03-02 12:37:53,185 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-03-02 12:37:53,186 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2024-03-02 12:37:53,233 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-03-02 12:37:53,234 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-03-02 12:37:53,236 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-02 12:37:53,244 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-02 12:37:53,245 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-02 12:37:53,364 - freqtrade.commands.trade_commands - ERROR - Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:37:53,366 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 24, in start_trading
+    worker = Worker(args)
+             ^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqtradebot.py", line 71, in __init__
+    self.strategy: IStrategy = StrategyResolver.load_strategy(self.config)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 48, in load_strategy
+    strategy: IStrategy = StrategyResolver._load_strategy(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 280, in _load_strategy
+    raise OperationalException(
+freqtrade.exceptions.OperationalException: Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:37:57,826 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-02 12:37:57,827 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-03-02 12:37:57,828 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-03-02 12:37:57,829 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-03-02 12:37:57,830 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-03-02 12:37:57,831 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2024-03-02 12:37:57,878 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-03-02 12:37:57,880 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-03-02 12:37:57,882 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-02 12:37:57,893 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-02 12:37:57,896 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-02 12:37:58,064 - freqtrade.commands.trade_commands - ERROR - Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:37:58,065 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 24, in start_trading
+    worker = Worker(args)
+             ^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqtradebot.py", line 71, in __init__
+    self.strategy: IStrategy = StrategyResolver.load_strategy(self.config)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 48, in load_strategy
+    strategy: IStrategy = StrategyResolver._load_strategy(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 280, in _load_strategy
+    raise OperationalException(
+freqtrade.exceptions.OperationalException: Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:38:02,841 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-02 12:38:02,844 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-03-02 12:38:02,846 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-03-02 12:38:02,848 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-03-02 12:38:02,850 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-03-02 12:38:02,851 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2024-03-02 12:38:02,999 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-03-02 12:38:03,004 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-03-02 12:38:03,007 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-02 12:38:03,021 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-02 12:38:03,023 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-02 12:38:03,287 - freqtrade.commands.trade_commands - ERROR - Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:38:03,289 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 24, in start_trading
+    worker = Worker(args)
+             ^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqtradebot.py", line 71, in __init__
+    self.strategy: IStrategy = StrategyResolver.load_strategy(self.config)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 48, in load_strategy
+    strategy: IStrategy = StrategyResolver._load_strategy(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 280, in _load_strategy
+    raise OperationalException(
+freqtrade.exceptions.OperationalException: Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:38:09,218 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-02 12:38:09,220 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-03-02 12:38:09,221 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-03-02 12:38:09,222 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-03-02 12:38:09,223 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-03-02 12:38:09,224 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2024-03-02 12:38:09,337 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-03-02 12:38:09,339 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-03-02 12:38:09,341 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-02 12:38:09,351 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-02 12:38:09,352 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-02 12:38:09,512 - freqtrade.commands.trade_commands - ERROR - Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:38:09,513 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 24, in start_trading
+    worker = Worker(args)
+             ^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqtradebot.py", line 71, in __init__
+    self.strategy: IStrategy = StrategyResolver.load_strategy(self.config)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 48, in load_strategy
+    strategy: IStrategy = StrategyResolver._load_strategy(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 280, in _load_strategy
+    raise OperationalException(
+freqtrade.exceptions.OperationalException: Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:38:15,479 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-02 12:38:15,480 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-03-02 12:38:15,481 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-03-02 12:38:15,482 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-03-02 12:38:15,483 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-03-02 12:38:15,483 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2024-03-02 12:38:15,538 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-03-02 12:38:15,542 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-03-02 12:38:15,544 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-02 12:38:15,561 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-02 12:38:15,563 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-02 12:38:15,803 - freqtrade.commands.trade_commands - ERROR - Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:38:15,804 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 24, in start_trading
+    worker = Worker(args)
+             ^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqtradebot.py", line 71, in __init__
+    self.strategy: IStrategy = StrategyResolver.load_strategy(self.config)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 48, in load_strategy
+    strategy: IStrategy = StrategyResolver._load_strategy(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 280, in _load_strategy
+    raise OperationalException(
+freqtrade.exceptions.OperationalException: Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:38:23,245 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-02 12:38:23,246 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-03-02 12:38:23,249 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-03-02 12:38:23,250 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-03-02 12:38:23,252 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-03-02 12:38:23,255 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2024-03-02 12:38:23,382 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-03-02 12:38:23,385 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-03-02 12:38:23,387 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-02 12:38:23,398 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-02 12:38:23,400 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-02 12:38:23,596 - freqtrade.commands.trade_commands - ERROR - Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:38:23,597 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 24, in start_trading
+    worker = Worker(args)
+             ^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqtradebot.py", line 71, in __init__
+    self.strategy: IStrategy = StrategyResolver.load_strategy(self.config)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 48, in load_strategy
+    strategy: IStrategy = StrategyResolver._load_strategy(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 280, in _load_strategy
+    raise OperationalException(
+freqtrade.exceptions.OperationalException: Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:38:34,389 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-02 12:38:34,391 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-03-02 12:38:34,392 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-03-02 12:38:34,393 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-03-02 12:38:34,395 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-03-02 12:38:34,396 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2024-03-02 12:38:34,494 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-03-02 12:38:34,497 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-03-02 12:38:34,499 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-02 12:38:34,521 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-02 12:38:34,523 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-02 12:38:34,783 - freqtrade.commands.trade_commands - ERROR - Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:38:34,785 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 24, in start_trading
+    worker = Worker(args)
+             ^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqtradebot.py", line 71, in __init__
+    self.strategy: IStrategy = StrategyResolver.load_strategy(self.config)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 48, in load_strategy
+    strategy: IStrategy = StrategyResolver._load_strategy(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 280, in _load_strategy
+    raise OperationalException(
+freqtrade.exceptions.OperationalException: Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:38:51,628 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-02 12:38:51,630 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-03-02 12:38:51,632 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-03-02 12:38:51,635 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-03-02 12:38:51,637 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-03-02 12:38:51,638 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2024-03-02 12:38:51,758 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-03-02 12:38:51,762 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-03-02 12:38:51,763 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-02 12:38:51,774 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-02 12:38:51,776 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-02 12:38:51,966 - freqtrade.commands.trade_commands - ERROR - Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:38:51,967 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 24, in start_trading
+    worker = Worker(args)
+             ^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqtradebot.py", line 71, in __init__
+    self.strategy: IStrategy = StrategyResolver.load_strategy(self.config)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 48, in load_strategy
+    strategy: IStrategy = StrategyResolver._load_strategy(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 280, in _load_strategy
+    raise OperationalException(
+freqtrade.exceptions.OperationalException: Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:39:21,711 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-02 12:39:21,712 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-03-02 12:39:21,715 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-03-02 12:39:21,717 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-03-02 12:39:21,719 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-03-02 12:39:21,721 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2024-03-02 12:39:21,809 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-03-02 12:39:21,812 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-03-02 12:39:21,814 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-02 12:39:21,825 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-02 12:39:21,829 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-02 12:39:22,014 - freqtrade.commands.trade_commands - ERROR - Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:39:22,016 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 24, in start_trading
+    worker = Worker(args)
+             ^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqtradebot.py", line 71, in __init__
+    self.strategy: IStrategy = StrategyResolver.load_strategy(self.config)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 48, in load_strategy
+    strategy: IStrategy = StrategyResolver._load_strategy(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 280, in _load_strategy
+    raise OperationalException(
+freqtrade.exceptions.OperationalException: Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:40:17,211 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-02 12:40:17,213 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-03-02 12:40:17,214 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-03-02 12:40:17,215 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-03-02 12:40:17,217 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-03-02 12:40:17,218 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2024-03-02 12:40:17,331 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-03-02 12:40:17,334 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-03-02 12:40:17,335 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-02 12:40:17,345 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-02 12:40:17,346 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-02 12:40:17,518 - freqtrade.commands.trade_commands - ERROR - Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:40:17,520 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 24, in start_trading
+    worker = Worker(args)
+             ^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqtradebot.py", line 71, in __init__
+    self.strategy: IStrategy = StrategyResolver.load_strategy(self.config)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 48, in load_strategy
+    strategy: IStrategy = StrategyResolver._load_strategy(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/strategy_resolver.py", line 280, in _load_strategy
+    raise OperationalException(
+freqtrade.exceptions.OperationalException: Impossible to load Strategy 'SampleStrategy'. This class does not exist or contains Python code errors.
+2024-03-02 12:40:35,045 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-02 12:40:35,046 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-03-02 12:40:35,048 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-03-02 12:40:35,050 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-03-02 12:40:35,052 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-03-02 12:40:35,053 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2024-03-02 12:40:35,147 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-03-02 12:40:35,151 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-03-02 12:40:35,153 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-02 12:40:35,167 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-02 12:40:35,168 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-02 12:40:35,210 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy BBRsiStrategy from '/freqtrade/user_data/strategies/bbrsi_naive_strategy.py'...
+2024-03-02 12:40:35,212 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2024-03-02 12:40:35,214 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 15.
+2024-03-02 12:40:35,215 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2024-03-02 12:40:35,216 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: unlimited.
+2024-03-02 12:40:35,217 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2024-03-02 12:40:35,218 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 10.
+2024-03-02 12:40:35,219 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2024-03-02 12:40:35,220 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 15
+2024-03-02 12:40:35,221 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.01
+2024-03-02 12:40:35,222 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2024-03-02 12:40:35,223 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2024-03-02 12:40:35,225 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2024-03-02 12:40:35,226 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2024-03-02 12:40:35,226 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2024-03-02 12:40:35,227 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2024-03-02 12:40:35,228 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2024-03-02 12:40:35,229 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2024-03-02 12:40:35,231 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2024-03-02 12:40:35,232 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2024-03-02 12:40:35,233 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 0
+2024-03-02 12:40:35,235 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2024-03-02 12:40:35,236 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2024-03-02 12:40:35,237 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2024-03-02 12:40:35,238 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2024-03-02 12:40:35,239 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2024-03-02 12:40:35,240 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2024-03-02 12:40:35,241 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2024-03-02 12:40:35,242 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2024-03-02 12:40:35,243 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2024-03-02 12:40:35,244 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 10
+2024-03-02 12:40:35,245 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2024-03-02 12:40:35,250 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2024-03-02 12:40:35,251 - freqtrade.exchange.exchange - INFO - Using CCXT 4.2.25
+2024-03-02 12:40:35,275 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2024-03-02 12:40:44,043 - freqtrade.commands.trade_commands - ERROR - Invalid timeframe '15'. This exchange supports: ['1s', '1m', '3m', '5m', '15m', '30m', '1h', '2h', '4h', '6h', '8h', '12h', '1d', '3d', '1w', '1M']
+2024-03-02 12:40:44,044 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 24, in start_trading
+    worker = Worker(args)
+             ^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqtradebot.py", line 76, in __init__
+    self.exchange = ExchangeResolver.load_exchange(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/exchange_resolver.py", line 37, in load_exchange
+    exchange = ExchangeResolver._load_exchange(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/exchange_resolver.py", line 64, in _load_exchange
+    exchange = ex_class(**kwargs)
+               ^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 189, in __init__
+    self.validate_config(config)
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 224, in validate_config
+    self.validate_timeframes(config.get('timeframe'))
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 595, in validate_timeframes
+    raise OperationalException(
+freqtrade.exceptions.OperationalException: Invalid timeframe '15'. This exchange supports: ['1s', '1m', '3m', '5m', '15m', '30m', '1h', '2h', '4h', '6h', '8h', '12h', '1d', '3d', '1w', '1M']
+2024-03-02 12:40:48,764 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-02 12:40:48,766 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-03-02 12:40:48,769 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-03-02 12:40:48,771 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-03-02 12:40:48,773 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-03-02 12:40:48,775 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2024-03-02 12:40:48,866 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-03-02 12:40:48,871 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-03-02 12:40:48,874 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-02 12:40:48,893 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-02 12:40:48,895 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-02 12:40:48,958 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy BBRsiStrategy from '/freqtrade/user_data/strategies/bbrsi_naive_strategy.py'...
+2024-03-02 12:40:48,961 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2024-03-02 12:40:48,963 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 15.
+2024-03-02 12:40:48,964 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2024-03-02 12:40:48,966 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: unlimited.
+2024-03-02 12:40:48,968 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2024-03-02 12:40:48,969 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 10.
+2024-03-02 12:40:48,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2024-03-02 12:40:48,972 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 15
+2024-03-02 12:40:48,974 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.01
+2024-03-02 12:40:48,975 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2024-03-02 12:40:48,977 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2024-03-02 12:40:48,979 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2024-03-02 12:40:48,981 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2024-03-02 12:40:48,982 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2024-03-02 12:40:48,984 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2024-03-02 12:40:48,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2024-03-02 12:40:48,987 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2024-03-02 12:40:48,989 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2024-03-02 12:40:48,990 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2024-03-02 12:40:48,991 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 0
+2024-03-02 12:40:48,993 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2024-03-02 12:40:48,995 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2024-03-02 12:40:48,996 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2024-03-02 12:40:48,998 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2024-03-02 12:40:48,999 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2024-03-02 12:40:49,001 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2024-03-02 12:40:49,002 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2024-03-02 12:40:49,004 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2024-03-02 12:40:49,005 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2024-03-02 12:40:49,007 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 10
+2024-03-02 12:40:49,008 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2024-03-02 12:40:49,015 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2024-03-02 12:40:49,017 - freqtrade.exchange.exchange - INFO - Using CCXT 4.2.25
+2024-03-02 12:40:49,055 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2024-03-02 12:40:57,483 - freqtrade.commands.trade_commands - ERROR - Invalid timeframe '15'. This exchange supports: ['1s', '1m', '3m', '5m', '15m', '30m', '1h', '2h', '4h', '6h', '8h', '12h', '1d', '3d', '1w', '1M']
+2024-03-02 12:40:57,485 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 24, in start_trading
+    worker = Worker(args)
+             ^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqtradebot.py", line 76, in __init__
+    self.exchange = ExchangeResolver.load_exchange(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/exchange_resolver.py", line 37, in load_exchange
+    exchange = ExchangeResolver._load_exchange(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/exchange_resolver.py", line 64, in _load_exchange
+    exchange = ex_class(**kwargs)
+               ^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 189, in __init__
+    self.validate_config(config)
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 224, in validate_config
+    self.validate_timeframes(config.get('timeframe'))
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 595, in validate_timeframes
+    raise OperationalException(
+freqtrade.exceptions.OperationalException: Invalid timeframe '15'. This exchange supports: ['1s', '1m', '3m', '5m', '15m', '30m', '1h', '2h', '4h', '6h', '8h', '12h', '1d', '3d', '1w', '1M']
+2024-03-02 12:41:01,816 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-02 12:41:01,818 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-03-02 12:41:01,819 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-03-02 12:41:01,820 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-03-02 12:41:01,822 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-03-02 12:41:01,824 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2024-03-02 12:41:01,939 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-03-02 12:41:01,942 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-03-02 12:41:01,944 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-02 12:41:01,953 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-02 12:41:01,954 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-02 12:41:02,023 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy BBRsiStrategy from '/freqtrade/user_data/strategies/bbrsi_naive_strategy.py'...
+2024-03-02 12:41:02,027 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2024-03-02 12:41:02,028 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 15.
+2024-03-02 12:41:02,030 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2024-03-02 12:41:02,031 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: unlimited.
+2024-03-02 12:41:02,033 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2024-03-02 12:41:02,034 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 10.
+2024-03-02 12:41:02,036 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2024-03-02 12:41:02,037 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 15
+2024-03-02 12:41:02,038 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.01
+2024-03-02 12:41:02,039 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2024-03-02 12:41:02,041 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2024-03-02 12:41:02,043 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2024-03-02 12:41:02,044 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2024-03-02 12:41:02,045 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2024-03-02 12:41:02,047 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2024-03-02 12:41:02,048 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2024-03-02 12:41:02,049 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2024-03-02 12:41:02,051 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2024-03-02 12:41:02,052 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2024-03-02 12:41:02,053 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 0
+2024-03-02 12:41:02,054 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2024-03-02 12:41:02,055 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2024-03-02 12:41:02,056 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2024-03-02 12:41:02,058 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2024-03-02 12:41:02,059 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2024-03-02 12:41:02,061 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2024-03-02 12:41:02,062 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2024-03-02 12:41:02,063 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2024-03-02 12:41:02,065 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2024-03-02 12:41:02,066 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 10
+2024-03-02 12:41:02,068 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2024-03-02 12:41:02,072 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2024-03-02 12:41:02,074 - freqtrade.exchange.exchange - INFO - Using CCXT 4.2.25
+2024-03-02 12:41:02,092 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2024-03-02 12:41:10,299 - freqtrade.commands.trade_commands - ERROR - Invalid timeframe '15'. This exchange supports: ['1s', '1m', '3m', '5m', '15m', '30m', '1h', '2h', '4h', '6h', '8h', '12h', '1d', '3d', '1w', '1M']
+2024-03-02 12:41:10,300 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 24, in start_trading
+    worker = Worker(args)
+             ^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqtradebot.py", line 76, in __init__
+    self.exchange = ExchangeResolver.load_exchange(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/exchange_resolver.py", line 37, in load_exchange
+    exchange = ExchangeResolver._load_exchange(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/exchange_resolver.py", line 64, in _load_exchange
+    exchange = ex_class(**kwargs)
+               ^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 189, in __init__
+    self.validate_config(config)
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 224, in validate_config
+    self.validate_timeframes(config.get('timeframe'))
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 595, in validate_timeframes
+    raise OperationalException(
+freqtrade.exceptions.OperationalException: Invalid timeframe '15'. This exchange supports: ['1s', '1m', '3m', '5m', '15m', '30m', '1h', '2h', '4h', '6h', '8h', '12h', '1d', '3d', '1w', '1M']
+2024-03-02 12:41:15,458 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-02 12:41:15,460 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-03-02 12:41:15,462 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-03-02 12:41:15,467 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-03-02 12:41:15,475 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-03-02 12:41:15,478 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2024-03-02 12:41:15,589 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-03-02 12:41:15,593 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-03-02 12:41:15,595 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-02 12:41:15,604 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-02 12:41:15,605 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-02 12:41:15,666 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy BBRsiStrategy from '/freqtrade/user_data/strategies/bbrsi_naive_strategy.py'...
+2024-03-02 12:41:15,669 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2024-03-02 12:41:15,671 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 15.
+2024-03-02 12:41:15,673 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2024-03-02 12:41:15,674 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: unlimited.
+2024-03-02 12:41:15,676 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2024-03-02 12:41:15,677 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 10.
+2024-03-02 12:41:15,678 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2024-03-02 12:41:15,679 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 15
+2024-03-02 12:41:15,681 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.01
+2024-03-02 12:41:15,682 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2024-03-02 12:41:15,683 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2024-03-02 12:41:15,685 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2024-03-02 12:41:15,686 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2024-03-02 12:41:15,687 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2024-03-02 12:41:15,688 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2024-03-02 12:41:15,689 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2024-03-02 12:41:15,690 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2024-03-02 12:41:15,691 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2024-03-02 12:41:15,693 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2024-03-02 12:41:15,694 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 0
+2024-03-02 12:41:15,695 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2024-03-02 12:41:15,696 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2024-03-02 12:41:15,698 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2024-03-02 12:41:15,699 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2024-03-02 12:41:15,701 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2024-03-02 12:41:15,702 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2024-03-02 12:41:15,703 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2024-03-02 12:41:15,705 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2024-03-02 12:41:15,706 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2024-03-02 12:41:15,707 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 10
+2024-03-02 12:41:15,709 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2024-03-02 12:41:15,713 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2024-03-02 12:41:15,714 - freqtrade.exchange.exchange - INFO - Using CCXT 4.2.25
+2024-03-02 12:41:15,730 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2024-03-02 12:41:24,342 - freqtrade.commands.trade_commands - ERROR - Invalid timeframe '15'. This exchange supports: ['1s', '1m', '3m', '5m', '15m', '30m', '1h', '2h', '4h', '6h', '8h', '12h', '1d', '3d', '1w', '1M']
+2024-03-02 12:41:24,343 - freqtrade.commands.trade_commands - ERROR - Fatal exception!
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/commands/trade_commands.py", line 24, in start_trading
+    worker = Worker(args)
+             ^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/worker.py", line 37, in __init__
+    self._init(False)
+  File "/freqtrade/freqtrade/worker.py", line 53, in _init
+    self.freqtrade = FreqtradeBot(self._config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/freqtradebot.py", line 76, in __init__
+    self.exchange = ExchangeResolver.load_exchange(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/exchange_resolver.py", line 37, in load_exchange
+    exchange = ExchangeResolver._load_exchange(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/resolvers/exchange_resolver.py", line 64, in _load_exchange
+    exchange = ex_class(**kwargs)
+               ^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 189, in __init__
+    self.validate_config(config)
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 224, in validate_config
+    self.validate_timeframes(config.get('timeframe'))
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 595, in validate_timeframes
+    raise OperationalException(
+freqtrade.exceptions.OperationalException: Invalid timeframe '15'. This exchange supports: ['1s', '1m', '3m', '5m', '15m', '30m', '1h', '2h', '4h', '6h', '8h', '12h', '1d', '3d', '1w', '1M']
+2024-03-02 12:41:29,288 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-03-02 12:41:29,291 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-03-02 12:41:29,295 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-03-02 12:41:29,297 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-03-02 12:41:29,299 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-03-02 12:41:29,302 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 10 ...
+2024-03-02 12:41:29,388 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-03-02 12:41:29,391 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-03-02 12:41:29,393 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-03-02 12:41:29,411 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-03-02 12:41:29,413 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-03-02 12:41:29,472 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy BBRsiStrategy from '/freqtrade/user_data/strategies/bbrsi_naive_strategy.py'...
+2024-03-02 12:41:29,474 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2024-03-02 12:41:29,475 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 15m.
+2024-03-02 12:41:29,476 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2024-03-02 12:41:29,477 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: unlimited.
+2024-03-02 12:41:29,479 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2024-03-02 12:41:29,481 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 10.
+2024-03-02 12:41:29,485 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2024-03-02 12:41:29,487 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 15m
+2024-03-02 12:41:29,489 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.01
+2024-03-02 12:41:29,491 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2024-03-02 12:41:29,494 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2024-03-02 12:41:29,496 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2024-03-02 12:41:29,497 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2024-03-02 12:41:29,500 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2024-03-02 12:41:29,503 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2024-03-02 12:41:29,505 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2024-03-02 12:41:29,507 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2024-03-02 12:41:29,508 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2024-03-02 12:41:29,509 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2024-03-02 12:41:29,512 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 0
+2024-03-02 12:41:29,514 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2024-03-02 12:41:29,517 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2024-03-02 12:41:29,520 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2024-03-02 12:41:29,521 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2024-03-02 12:41:29,522 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2024-03-02 12:41:29,524 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2024-03-02 12:41:29,525 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2024-03-02 12:41:29,527 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2024-03-02 12:41:29,528 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2024-03-02 12:41:29,530 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 10
+2024-03-02 12:41:29,531 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2024-03-02 12:41:29,539 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2024-03-02 12:41:29,542 - freqtrade.exchange.exchange - INFO - Using CCXT 4.2.25
+2024-03-02 12:41:29,572 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
