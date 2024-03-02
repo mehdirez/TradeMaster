@@ -33,3 +33,8 @@ docker-compose run --rm freqtrade --help
 #         {trade,create-userdir,new-config,new-hyperopt,new-strategy,download-data,convert-data,convert-trade-data,
 #         list-data,backtesting,edge,hyperopt,hyperopt-list,hyperopt-show,list-exchanges,list-hyperopts,list-markets,
 #         list-pairs,list-strategies,list-timeframes,show-trades,test-pairlist,instal l-ui,plot-dataframe,plot-profit}
+
+# configure trade pairs.json in data\binance and run
+docker-compose run freqtrade download-data --exchange binance -t 15m
+#  list trade pairs
+ docker-compose run freqtrade list-data --exchange binance
