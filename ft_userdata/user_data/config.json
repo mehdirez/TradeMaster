@@ -34,8 +34,8 @@
     },
     "exchange": {
         "name": "binance",
-        "key": "",
-        "secret": "",
+        "key": "7qCoQlmVDeFSNFrqhnfb1fMmTJUZLZbzQeKlbXRbhmqdRScUBIRD40ODFHR8Lt6G",
+        "secret": "nigNhMMoNgCZUrTWTkafaDsyWWAeiSBWAuQv7KBW2lqbHxcK0kM59v8V6Pk2nVQs",
         "ccxt_config": {"enableRateLimit": true},
         "ccxt_async_config": {
             "enableRateLimit": true,
