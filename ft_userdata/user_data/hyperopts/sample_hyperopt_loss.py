@@ -4,7 +4,6 @@ from typing import Dict
 
 from pandas import DataFrame
 
-from freqtrade.constants import Config
 from freqtrade.optimize.hyperopt import IHyperOptLoss
 
 
@@ -37,7 +36,7 @@ class SampleHyperOptLoss(IHyperOptLoss):
     @staticmethod
     def hyperopt_loss_function(results: DataFrame, trade_count: int,
                                min_date: datetime, max_date: datetime,
-                               config: Config, processed: Dict[str, DataFrame],
+                               config: Dict, processed: Dict[str, DataFrame],
                                *args, **kwargs) -> float:
         """
         Objective function, returns smaller number for better results
