@@ -7,7 +7,7 @@
     "timeframe": "15m",
     "dry_run": false,
     "dry_run_wallet": 1000,
-    "live_run_wallet": 100,
+    "live_run_wallet": 800,
     "cancel_open_orders_on_exit": false,
     "unfilledtimeout": {
         "buy": 10,
