@@ -12,33 +12,26 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 # Doenload git repository
-git clone https://github.com/mehdirez/i-optimize-trading-strategy-using-freqtrade.git
-cd cd i-optimize-trading-strategy-using-freqtrade/
+# chmod 600 /path/to/private/key/private_key_file
+# git clone -i /path/to/private/key/private_key_file git@github.com:mehdirez/TradeMaster.git
+git clone https://github.com/mehdirez/TradeMaster.git
+cd TradeMaster/
 cd ft_userdata/
 sudo docker-compose pull
 # remove past trade data
 rm user_data/tradesv3.sqlite
 # download data for backtesting
-docker-compose run --rm freqtrade download-data --exchange binance -t 15m --timerange=20210728-
+sudo docker-compose run --rm freqtrade download-data --exchange binance -t 15m --timerange=20230101-
 
 # optinal backtesting command
 # docker-compose run freqtrade backtesting --datadir user_data/data/binance --export trades  --stake-amount 1000 -s SwingHighToSky -i 15m --timerange=20210728-
 
 # Run Optimization
-docker-compose run --rm freqtrade hyperopt --enable-protections --strategy SwingHighToSky --hyperopt-loss SharpeHyperOptLoss -i 15m -e 3000
+sudo docker-compose run --rm freqtrade hyperopt --enable-protections --strategy SwingHighToSky --hyperopt-loss SharpeHyperOptLoss -i 15m -e 5000 --timerange=20230101-
 
-
-git add .
-git commit -m "Hyperopt new updatte"
-git pull origin main
-git push origin branch-name #we need ssh key for pushing
-
-
-
-
-
-sudo docker-compose up -d
-sudo docker-compose logs -f 
-
-
-
+# git add .
+# git commit -m "Hyperopt new updatte"
+# git pull origin main
+# git push origin branch-name #we need ssh key for pushing
+# sudo docker-compose down -d
+# sudo docker-compose logs -f
