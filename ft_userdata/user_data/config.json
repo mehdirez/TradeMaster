@@ -7,7 +7,7 @@
     "timeframe": "1h",
     "dry_run": true,
     "dry_run_wallet": 1000,
-    "live_run_wallet": 800,
+    "live_run_wallet": 850,
     "cancel_open_orders_on_exit": false,
     "unfilledtimeout": {
         "buy": 10,
@@ -43,10 +43,13 @@
         },
         "pair_whitelist": [
             "KDA/USDT",
-            "IOTA/USDT",
+            "ADA/USDT",
             "MATIC/USDT",
-            "Audio/USDT",
-            "ALGO/USDT"
+            "COTI/USDT",
+            "CHZ/USDT",
+            "SOL/USDT",
+            "DOT/USDT",
+            "FIL/USDT"
         ],
         "pair_blacklist": [
             "BNB/*" 

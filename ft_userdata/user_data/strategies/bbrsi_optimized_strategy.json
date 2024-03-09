@@ -1,0 +1,28 @@
+{
+  "strategy_name": "BBRSIOptimizedStrategy",
+  "params": {
+    "buy": {},
+    "sell": {},
+    "protection": {},
+    "roi": {
+      "0": 0.21200000000000002,
+      "36": 0.073,
+      "56": 0.01,
+      "170": 0
+    },
+    "stoploss": {
+      "stoploss": -0.293
+    },
+    "trailing": {
+      "trailing_stop": true,
+      "trailing_stop_positive": 0.103,
+      "trailing_stop_positive_offset": 0.201,
+      "trailing_only_offset_is_reached": true
+    },
+    "max_open_trades": {
+      "max_open_trades": 10
+    }
+  },
+  "ft_stratparam_v": 1,
+  "export_time": "2024-03-09 13:13:09.365546+00:00"
+}

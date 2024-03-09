@@ -8,31 +8,31 @@
       "trailing_only_offset_is_reached": false
     },
     "max_open_trades": {
-      "max_open_trades": 4
+      "max_open_trades": 5
     },
     "buy": {
-      "buy_cci": -16,
-      "buy_cciTime": 37,
-      "buy_rsi": 81,
-      "buy_rsiTime": 42
+      "buy_cci": 36,
+      "buy_cciTime": 60,
+      "buy_rsi": 78,
+      "buy_rsiTime": 55
     },
     "sell": {
-      "sell_cci": 132,
-      "sell_cciTime": 53,
-      "sell_rsi": 74,
-      "sell_rsiTime": 36
+      "sell_cci": 114,
+      "sell_cciTime": 50,
+      "sell_rsi": 67,
+      "sell_rsiTime": 26
     },
     "protection": {},
     "roi": {
-      "0": 0.382,
-      "43": 0.121,
-      "106": 0.019,
-      "278": 0
+      "0": 0.218,
+      "36": 0.07200000000000001,
+      "168": 0.024,
+      "290": 0
     },
     "stoploss": {
-      "stoploss": -0.265
+      "stoploss": -0.292
     }
   },
   "ft_stratparam_v": 1,
-  "export_time": "2024-03-07 13:19:21.054269+00:00"
+  "export_time": "2024-03-09 12:39:46.818225+00:00"
 }
