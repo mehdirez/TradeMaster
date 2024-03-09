@@ -33,5 +33,7 @@ sudo docker-compose run --rm freqtrade hyperopt --enable-protections --strategy 
 # git commit -m "Hyperopt new updatte"
 # git pull origin main
 # git push origin branch-name #we need ssh key for pushing
-# sudo docker-compose up -d
-# sudo docker-compose logs -f
+sudo docker-compose up -d
+sudo docker-compose logs -f
+
+
