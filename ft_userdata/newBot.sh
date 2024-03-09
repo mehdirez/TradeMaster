@@ -1,33 +1,7 @@
 #!/bin/bash
 # sudo touch MySecretKey.key
 # #Copy private key content 
-# echo "-----BEGIN OPENSSH PRIVATE KEY-----
-# b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn
-# NhAAAAAwEAAQAAAQEAngPCRCS4p9lBjD8a832AAdzVCf2sVZis7krWdknzO95qfOR7P6uG
-# bm8PHUPIxon9vZvKULDfhV0idvHSt8V71WMk7qtodfdOXdW7EjBDOiY58tVlvprnhxCAMj
-# JRrwBhwBAnVIGiG+TE2TgZhw/TO4Ne/WVW1HS/Xp/LmqLlHsCwMahSjN609NaY7+LfIdMh
-# XGVIqfjAOvbTulEEMZCRsneMkYwunwoVrsdNp2Gy5c6jkmx3uik3O9n8BQMCI1e4hrtnMJ
-# tbZVvPh+b0ui4iPkbA0cWx18AUhvDnwfibrwL5BWYetQR4e0YhnBXGeLhsVyPUjzW/yBXa
-# WKorN1wUbQAAA8jY1YCG2NWAhgAAAAdzc2gtcnNhAAABAQCeA8JEJLin2UGMPxrzfYAB3N
-# UJ/axVmKzuStZ2SfM73mp85Hs/q4Zubw8dQ8jGif29m8pQsN+FXSJ28dK3xXvVYyTuq2h1
-# 905d1bsSMEM6Jjny1WW+mueHEIAyMlGvAGHAECdUgaIb5MTZOBmHD9M7g179ZVbUdL9en8
-# uaouUewLAxqFKM3rT01pjv4t8h0yFcZUip+MA69tO6UQQxkJGyd4yRjC6fChWux02nYbLl
-# zqOSbHe6KTc72fwFAwIjV7iGu2cwm1tlW8+H5vS6LiI+RsDRxbHXwBSG8OfB+JuvAvkFZh
-# 61BHh7RiGcFcZ4uGxXI9SPNb/IFdpYqis3XBRtAAAAAwEAAQAAAQA51QJa0l3LANber5H7
-# n+kjxWErYO6b/V79b+KCNJqTRNoQj8cUDIENFhSgD1kCYSq/JK+tTK7iLq4YfnUy0VJ7TO
-# gNeiqnUjYaXckz5PoV5Du9RqEQW711T3K77HK87BTaqI7cfP2J2/a30bJ2HjKfS3uOnnJj
-# G7+WsEFifVACKsx1EmwpKsej/PiZkycaLxle8xyR/daRbI2Qsq4jbg0/7wLG5hDU2GHJkn
-# Jqhlgc3aZF6hlL5JlcqxWhfHUf+03DTNmnflEZizxVFHhOjDkrXPf0Q86lqBYpd+AO2/bX
-# 1w0257a92aEnX6t2mD3DQFQh6SvNa9saqyn8oA7iokC5AAAAgQC8+JVJJmA6Pwd82XJGif
-# 3kioGSPNB8opUQZ71VlUb8S5/WhBmsVFHfieXw9TkCh2QEHSPl5I0veT2ehkYzPx6PkAm9
-# P+FPTENJ4ujYpjXtYsc0tjHB3HqWpnUYSiBrf/SZ2zFNRHQs69wL2ganRBhwVS66XBWsBa
-# ZQ4KHy8Gvv/gAAAIEA0gxokvxMiWQKLwP+ucMh3OIGOQK4EJwwxBkhTlqNaBl8woVRimbV
-# zMO0QcWn3359Ptfhi130bN340mOeVnV2gH4VLi1N3NJwnK229r0HcCOjt4UmaDDLMZLcqe
-# /3VB13sYQhbXe+Bvz1E7ohU3nQzphP+HBrH2PYcA+JD00sPzcAAACBAMCVPa+aOwcvKAYJ
-# 5/A0Yglkca4G+/JVaudsE0+96F3ETw4I+btZQYMxV5v0lmKOjdUj5shZlPCa1p1XAJLe6A
-# 1g4uCS2nodNunYqdGvfVHnK7MHH3Wb3surgMS9PD1jgJhc/e9RSyZo2vXdpWxc00JGs3BL
-# 4KDgfaiz9unk7HN7AAAAEXJlemFlQE1laGRpTGFwdG9wAQ==
-# -----END OPENSSH PRIVATE KEY-----" | sudo tee MySecretKey.key -a  > /dev/null
+# echo "" | sudo tee MySecretKey.key -a  > /dev/null
 
 # sudo chmod 400 MySecretKey.key
 # ssh-agent bash -c 'ssh-add MySecretKey.key'
