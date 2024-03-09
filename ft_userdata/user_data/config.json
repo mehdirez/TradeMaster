@@ -1,10 +1,10 @@
 {
-    "max_open_trades": 5,
+    "max_open_trades": 8,
     "stake_currency": "USDT",
     "stake_amount" : "unlimited",
     "tradable_balance_ratio": 0.99,
     "fiat_display_currency": "USD",
-    "timeframe": "1h",
+    "timeframe": "15m",
     "dry_run": true,
     "dry_run_wallet": 1000,
     "live_run_wallet": 850,
@@ -74,8 +74,8 @@
     },
     "telegram": {
         "enabled": false,
-        "token": "6700534497:AAE64S4KjxvcFWaDpusdPfm0jn7RjLpUgJY",
-        "chat_id": "97662226"   
+        "token": "",
+        "chat_id": ""   
     },
     "api_server": {
         "enabled": true,
