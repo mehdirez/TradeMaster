@@ -1,0 +1,28 @@
+{
+  "strategy_name": "ClucMay72018",
+  "params": {
+    "buy": {},
+    "sell": {},
+    "protection": {},
+    "roi": {
+      "0": 0.23500000000000001,
+      "58": 0.14300000000000002,
+      "230": 0.043,
+      "421": 0
+    },
+    "stoploss": {
+      "stoploss": -0.059
+    },
+    "trailing": {
+      "trailing_stop": true,
+      "trailing_stop_positive": 0.019,
+      "trailing_stop_positive_offset": 0.043,
+      "trailing_only_offset_is_reached": true
+    },
+    "max_open_trades": {
+      "max_open_trades": 1
+    }
+  },
+  "ft_stratparam_v": 1,
+  "export_time": "2024-03-10 01:55:34.470977+00:00"
+}
