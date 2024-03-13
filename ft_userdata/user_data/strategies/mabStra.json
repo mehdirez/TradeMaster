@@ -1,0 +1,40 @@
+{
+  "strategy_name": "mabStra",
+  "params": {
+    "buy": {
+      "buy_div_max": 1.2648,
+      "buy_div_min": 0.0114,
+      "buy_fast_ma_timeframe": 19,
+      "buy_mojo_ma_timeframe": 10,
+      "buy_slow_ma_timeframe": 20
+    },
+    "sell": {
+      "sell_div_max": 0.0213,
+      "sell_div_min": 1.0715,
+      "sell_fast_ma_timeframe": 57,
+      "sell_mojo_ma_timeframe": 48,
+      "sell_slow_ma_timeframe": 61
+    },
+    "protection": {},
+    "roi": {
+      "0": 0.263,
+      "61": 0.10400000000000001,
+      "213": 0.05,
+      "438": 0
+    },
+    "stoploss": {
+      "stoploss": -0.141
+    },
+    "trailing": {
+      "trailing_stop": true,
+      "trailing_stop_positive": 0.133,
+      "trailing_stop_positive_offset": 0.228,
+      "trailing_only_offset_is_reached": false
+    },
+    "max_open_trades": {
+      "max_open_trades": 9
+    }
+  },
+  "ft_stratparam_v": 1,
+  "export_time": "2024-03-13 10:46:40.662546+00:00"
+}

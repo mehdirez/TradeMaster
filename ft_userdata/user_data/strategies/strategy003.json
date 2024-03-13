@@ -1,0 +1,28 @@
+{
+  "strategy_name": "Strategy003",
+  "params": {
+    "buy": {},
+    "sell": {},
+    "protection": {},
+    "roi": {
+      "0": 0.22599999999999998,
+      "28": 0.06899999999999999,
+      "82": 0.01,
+      "197": 0
+    },
+    "stoploss": {
+      "stoploss": -0.164
+    },
+    "trailing": {
+      "trailing_stop": true,
+      "trailing_stop_positive": 0.343,
+      "trailing_stop_positive_offset": 0.392,
+      "trailing_only_offset_is_reached": true
+    },
+    "max_open_trades": {
+      "max_open_trades": 8
+    }
+  },
+  "ft_stratparam_v": 1,
+  "export_time": "2024-03-13 12:28:18.140793+00:00"
+}
