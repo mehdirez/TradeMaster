@@ -42,14 +42,15 @@
             "rateLimit": 200
         },
         "pair_whitelist": [
+            "BTC/USDT",
             "KDA/USDT",
             "ADA/USDT",
             "MATIC/USDT",
             "COTI/USDT",
             "ALGO/USDT",
             "SOL/USDT",
-            "DOT/USDT",
-            "FIL/USDT"
+            "DOGE/USDT"
+
         ],
         "pair_blacklist": [
             "BNB/*" 

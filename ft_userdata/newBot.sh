@@ -33,7 +33,7 @@ sudo docker-compose pull
 # remove past trade data
 rm user_data/tradesv3.sqlite
 # download data for backtesting
-sudo docker-compose run --rm freqtrade download-data --exchange binance -t 15m #--timerange=20230101-
+sudo docker-compose run --rm freqtrade download-data --exchange binance -t 15m 1h #--timerange=20230101-
 
 # optinal backtesting command
 # docker-compose run freqtrade backtesting --datadir user_data/data/binance --export trades  --stake-amount 1000 -s SwingHighToSky -i 15m --timerange=20210728-
@@ -54,3 +54,10 @@ sudo docker-compose run --rm freqtrade download-data --exchange binance -t 15m #
 # scp -i AmazonKeyPair.pem  .ssh/MySecretKey ubuntu@ec2-3-26-161-56.ap-southeast-2.compute.amazonaws.com:~/
 
 
+# "ADA/USDT",
+#             "MATIC/USDT",
+#             "COTI/USDT",
+#             "ALGO/USDT",
+#             "SOL/USDT",
+#             "DOT/USDT",
+#             "FIL/USDT"
