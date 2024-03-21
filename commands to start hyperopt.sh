@@ -27,7 +27,7 @@ sudo docker-compose run --rm freqtrade download-data --exchange binance -t 15m
 # docker-compose run freqtrade backtesting --datadir user_data/data/binance --export trades  --stake-amount 1000 -s SwingHighToSky -i 15m --timerange=20210728-
 
 # Run Optimization
-sudo docker-compose run --rm freqtrade hyperopt --enable-protections --strategy ClucMay72018 --spaces roi stoploss trailing trade --hyperopt-loss SharpeHyperOptLoss -i 15m -e 1500
+sudo docker-compose run --rm freqtrade hyperopt --enable-protections --strategy BBRSIOptimizedStrategy --spaces roi stoploss trailing trades --hyperopt-loss SharpeHyperOptLoss -i 15m -e 3000
 
 # git add .
 # git commit -m "Hyperopt new updatte"

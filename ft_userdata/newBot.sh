@@ -34,7 +34,7 @@ sudo docker-compose pull
 rm user_data/tradesv3.sqlite
 # download data for backtesting
 sudo docker-compose run --rm freqtrade download-data --exchange binance -t 15m 1h #--timerange=20230101-
-
+sudo docker-compose run --rm freqtrade hyperopt --enable-protections --strategy BBRSIOptimizedStrategy --spaces roi stoploss trailing trades --hyperopt-loss SharpeHyperOptLoss -i 15m -e 50
 # optinal backtesting command
 # docker-compose run freqtrade backtesting --datadir user_data/data/binance --export trades  --stake-amount 1000 -s SwingHighToSky -i 15m --timerange=20210728-
 

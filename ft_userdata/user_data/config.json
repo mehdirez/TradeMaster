@@ -42,15 +42,14 @@
             "rateLimit": 200
         },
         "pair_whitelist": [
-            "BTC/USDT",
+            "CHZ/USDT",
             "KDA/USDT",
-            "ADA/USDT",
-            "MATIC/USDT",
-            "COTI/USDT",
-            "ALGO/USDT",
             "SOL/USDT",
-            "DOGE/USDT"
-
+            "MATIC/USDT",
+            "LINK/USDT",
+            "DOT/USDT",
+            "ALGO/USDT",
+            "COTI/USDT"
         ],
         "pair_blacklist": [
             "BNB/*" 
@@ -85,8 +84,8 @@
         "verbosity": "info",
         "jwt_secret_key": "somethingrandom",
         "CORS_origins": [],
-        "username": "Freqtrader",
-        "password": "secretpass!"
+        "username": "iMasterTrade",
+        "password": "SecretP@ssw0rd!"
     },
     "bot_name": "freqtrade",
     "initial_state": "running",
