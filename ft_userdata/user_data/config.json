@@ -44,12 +44,12 @@
         "pair_whitelist": [
             "CHZ/USDT",
             "KDA/USDT",
-            "SOL/USDT",
-            "MATIC/USDT",
-            "LINK/USDT",
-            "DOT/USDT",
-            "ALGO/USDT",
-            "COTI/USDT"
+            "SOL/USDT"
+            // "MATIC/USDT",
+            // "LINK/USDT",
+            // "DOT/USDT",
+            // "ALGO/USDT",
+            // "COTI/USDT"
         ],
         "pair_blacklist": [
             "BNB/*" 
